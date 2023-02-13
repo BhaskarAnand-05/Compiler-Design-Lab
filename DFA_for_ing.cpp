@@ -33,6 +33,7 @@ bool is_accepted(string input_string)
     for (int i = 0; i < input_string.size(); i++)
     {
         char current_char = input_string[i];
+        cout<<current_char;
         current_state = transition_function[make_pair(current_state, current_char)];
     }
     return (current_state == "q3");
